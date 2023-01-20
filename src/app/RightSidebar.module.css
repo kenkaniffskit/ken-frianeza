@@ -1,0 +1,31 @@
+.layoutRightSidebar {
+  display: none;
+  flex-direction: column;
+  border-left: solid 1px var(--color-light-gray);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.iconsTop, .iconsBottom {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuIcon {
+  outline: solid 1px var(--color-light-gray);
+  padding: 0.125rem;
+}
+
+@media (min-width: 40em) {
+  .layoutRightSidebar {
+    display: block;
+  }
+}

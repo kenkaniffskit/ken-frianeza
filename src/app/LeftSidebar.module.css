@@ -1,0 +1,118 @@
+.layoutLeftSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  padding: 0.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-gray);
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: none;
+  height: 100%;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  margin: 0.85rem 0;
+  max-width: 16rem;
+  max-height: 16rem;
+}
+
+.profileInfo h1 {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-h1-mobile);
+}
+
+.profileInfo p {
+  font-weight: 200;
+  font-size: var(--text-p-mobile);
+}
+
+.profileInfo .info :nth-child(3) {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.button {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 0.5rem;
+  transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1), background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.buttonScale:hover {
+  transform: scale(1.05);
+}
+
+.buttons :nth-child(1) {
+  background: none;
+  border: solid 2px var(--color-white);
+  color: var(--color-white);
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+.buttons :nth-child(2) {
+  background: var(--color-white);
+  color: var(--color-gray);
+}
+
+.button:hover {
+  background: var(--color-white);
+  color: var(--color-gray);
+  cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .layoutLeftSidebar {
+    border-right: solid 1px var(--color-light-gray);
+  }
+
+  .menu {
+    position: fixed;
+    justify-content: start;
+  }
+
+  .profileInfo {
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-light-gray);
+    height: auto;
+  }
+
+  .profileInfo h1 {
+    font-size: var(--text-h1-desktop);
+  }
+  
+  .profileInfo p {
+    font-size: var(--text-p-desktop);
+  }
+
+  .profilePicture {
+    width: 185px;
+    height: 185px;
+  }
+}
