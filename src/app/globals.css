@@ -25,6 +25,13 @@
   /* Mobile Screen */
   --text-h1-mobile: 2.5em;
   --text-p-mobile: 1.5em;
+
+  /* Screen Sizes*/
+  --1080p-screen: 1920px;
+  --1440p-screen: 1440px;
+  --1280p-screen: 1280px;
+  --1024p-screen: 1024px;
+  --640p-screen: 1024px;
 }
 
 * {
@@ -62,7 +69,7 @@ a {
 @media (min-width: 40em) {
   .layout {
     display: grid;
-    grid-template-columns: 230px auto 60px;
+    grid-template-columns: 250px auto 60px;
   }
 }
 

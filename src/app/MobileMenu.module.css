@@ -1,0 +1,41 @@
+.mobileNavMenu {
+  position: fixed;
+  top: 54px;
+  /* left: -450px; */
+  width: 90%;
+  height: 100vh;
+  background: var(--color-gray);
+  opacity: 0.95;
+  box-shadow:
+  0px 0px 3px -3px rgba(0, 0, 0, 0.05),
+  0px 0px 24px -3px rgba(0, 0, 0, 0.1);
+  border-right: solid 1px var(--color-light-gray);
+}
+
+.mobileNavMenu .icons .menuIcon a {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+  margin: 0 1rem;
+  width: auto;
+  border-bottom: solid 1px var(--color-light-gray);
+  transition: background 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  color: var(--color-white);
+}
+
+.icons .menuIcon a:hover {
+  background: var(--color-light-gray);
+  cursor: pointer;
+}
+
+.icons .menuIcon svg, .icons .menuIcon p {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .mobileNavMenu {
+    display: none;
+  }
+}

@@ -1,7 +1,6 @@
 .layoutRightSidebar {
   display: none;
   flex-direction: column;
-  border-left: solid 1px var(--color-light-gray);
 }
 
 .menu {
@@ -9,8 +8,9 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  padding: 0.5rem;
+  padding: 0.85rem;
   height: 100%;
+  z-index: 10;
 }
 
 .iconsTop, .iconsBottom {
@@ -20,12 +20,28 @@
 }
 
 .menuIcon {
-  outline: solid 1px var(--color-light-gray);
-  padding: 0.125rem;
+  display: flex;
+  padding: .5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.1s ease-in, color 0.1s ease-in;
+}
+
+.menuIcon:hover {
+  background: var(--color-white);
+  color: var(--color-gray);
+}
+
+
+.divider {
+  border-bottom: solid 1px var(--color-light-gray);
 }
 
 @media (min-width: 40em) {
   .layoutRightSidebar {
-    display: block;
+    display: flex;
+    align-items: center;
+    border-left: solid 1px var(--color-light-gray);
   }
 }
