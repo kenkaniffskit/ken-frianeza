@@ -9,7 +9,7 @@ import { FaBookOpen } from "react-icons/fa";
 import { IoMdRibbon } from "react-icons/io";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-import motion from "framer-motion";
+import { motion } from "framer-motion";
 
 const MobileMenu = ({ xUpdatedPosition }) => {
 	const links = [
