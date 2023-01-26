@@ -10,17 +10,7 @@ import styles from "./LeftSidebar.module.css";
 import profilePicture from "../../public/profile.jpg";
 
 import { HiMenuAlt2 } from "react-icons/hi";
-import {
-	BsGithub,
-	BsInstagram,
-	BsFacebook,
-	BsFillTelephoneFill,
-} from "react-icons/bs";
-import { AiFillHome } from "react-icons/ai";
-import { FaBookOpen } from "react-icons/fa";
-import { IoMdRibbon } from "react-icons/io";
-
-import { motion } from "framer-motion";
+import { BsGithub, BsInstagram, BsFacebook } from "react-icons/bs";
 
 import MobileMenu from "./MobileMenu";
 
