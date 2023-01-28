@@ -11,7 +11,11 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 import { motion } from "framer-motion";
 
-const MobileMenu = ({ xUpdatedPosition }) => {
+type MobileMenuProps = {
+	xUpdatedPosition: number;
+};
+
+const MobileMenu = ({ xUpdatedPosition }: MobileMenuProps) => {
 	const links = [
 		{ name: "Home", link: "/", icon: <AiFillHome /> },
 		{ name: "Skills", link: "#skills", icon: <FaBookOpen /> },

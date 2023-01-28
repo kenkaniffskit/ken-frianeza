@@ -33,7 +33,7 @@ const LeftSidebar = () => {
 			{menu ? (
 				<MobileMenu xUpdatedPosition={-25} />
 			) : (
-				<MobileMenu xUpdatedPosition={-500} />
+				<MobileMenu xUpdatedPosition={-700} />
 			)}
 
 			<div className={styles.menu}>
